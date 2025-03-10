@@ -1,0 +1,134 @@
+.admin-page {
+    background-image: url("../assets/background_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.topbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.topbar a:hover {
+    color: #8b3ad6;
+}
+
+.logout-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: #ff5c5c;
+    text-shadow: 0 0 5px rgba(255, 92, 92, 0.8);
+}
+
+.admin-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.admin-content h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.admin-page .table-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    width: 85vw;
+    max-width: 1100px;
+    transition: all 0.3s ease-in-out;
+}
+
+.admin-page table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-page th {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: bold;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+}
+
+.admin-page tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.admin-page td {
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.admin-page tr:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transition: background 0.3s ease-in-out;
+}
+
+.admin-page .action-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-width: 50px;
+}
+
+.admin-page .delete-icon {
+    font-size: 22px;
+    color: #870000;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-page .delete-icon:hover {
+    transform: scale(1.2);
+    color: #e42020;
+}
