@@ -1,6 +1,6 @@
 
 .login-page {
-    background-image: url("/Users/guldanaabeshova/login_tz/src/components/assets/background_n.jpg");
+    background-image: url("../assets/background_n.jpg");
     background-size: cover;  
     background-position: center;
     background-repeat: no-repeat; 

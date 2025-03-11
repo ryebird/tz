@@ -1,11 +1,10 @@
 .admin-page {
-    background-image: url("../assets/background_n.jpg");
+    background-image: url("../assets/background_n.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +53,11 @@
     justify-content: flex-start;
     flex: 1;
     margin-top: 20px;
+    overflow-y: auto;  
+    padding-bottom: 20px;
+    max-height: 80vh; 
 }
+
 
 .admin-content h1 {
     font-size: 36px;
@@ -62,7 +65,9 @@
     margin-bottom: 30px;
 }
 
-.admin-page .table-container {
+.table-container {
+    overflow-x: auto;
+    scrollbar-color: rgba(139, 58, 214, 0.6) rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.15);
     padding: 20px;
     border-radius: 15px;
@@ -70,6 +75,7 @@
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
     width: 85vw;
     max-width: 1100px;
+    overflow-x: auto; 
     transition: all 0.3s ease-in-out;
 }
 
@@ -99,6 +105,7 @@
 
 .admin-page td {
     color: white;
+    white-space: nowrap; 
     padding: 12px 18px;
     font-size: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -119,8 +126,7 @@
 }
 
 .admin-page .delete-icon {
-    font-size: 22px;
-    color: #870000;
+    font-size: 24px;
     cursor: pointer;
     transition: transform 0.2s ease, color 0.2s ease;
     display: flex;
@@ -132,3 +138,52 @@
     transform: scale(1.2);
     color: #e42020;
 }
+.admin-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.admin-tabs button {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.admin-tabs button.active {
+    background: #8b3ad6;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+
+.filter-container select, .filter-container input {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+.filter-container button {
+    background: #8b3ad6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+
